@@ -47,4 +47,5 @@ This project aims to develop an AI-driven system that provides personalized ment
 
 ---
 
-For further details, consult each sprint's tasks and the recommended tools to streamline your project management. Happy coding!
+### NLTK Coding Explanations
+It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum
