@@ -45,7 +45,12 @@ This project aims to develop an AI-driven system that provides personalized ment
 3. **Data Collection**: Gather necessary datasets and prepare them for processing.
 4. **Run Application**: Start the server, run the frontend, and test the application.
 
----
+## Data Sources
 
-### NLTK Coding Explanations
-It provides easy-to-use interfaces to over 50 corpora and lexical resources such as WordNet, along with a suite of text processing libraries for classification, tokenization, stemming, tagging, parsing, and semantic reasoning, wrappers for industrial-strength NLP libraries, and an active discussion forum
+1. **Mental Health Counsel Chatbot**
+   - [Kaggle Notebook: Mental Health Counsel Chatbot](https://www.kaggle.com/code/weiting016/mental-health-counsel-chatbot)
+   - Description: Provides mental health counseling data, which we used to supplement information from the primary dataset and align topics for consistent categorization.
+
+2. **Mental Health Synthetic Dataset**
+   - [Kaggle Dataset: Mental Health Synthetic Dataset](https://www.kaggle.com/datasets/anweshaghosh123/mental-health-synthetic-dataset)
+   - Description: This primary dataset contains synthetic data on mental health symptoms, demographics, and treatment, forming the basis for model training and recommendation generation.
