@@ -28,7 +28,7 @@ This project aims to develop an AI-driven system that provides personalized ment
 |                                            | Task 2          | Perform user testing to gather feedback on UI/UX and model accuracy.                                                                   | Yoon Kim & Patel Vraj    |                    |
 |                                            | Task 3          | Finalize any adjustments based on testing results and optimize performance for deployment.                                             | Yoon Kim & Patel Vraj    |                    |
 
----                                       |
+                                      |
 
 ## Technology Stack
 - **Frontend**: React.js
