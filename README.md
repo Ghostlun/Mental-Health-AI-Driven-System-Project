@@ -4,9 +4,6 @@
 ## Project Overview
 This project aims to develop an AI-driven system that provides personalized mental health treatment recommendations based on user input. Users will complete a self-assessment, and the backend will analyze the data using two datasets—mental symptoms and drug treatments—to generate tailored treatment suggestions. The final product will be a single-page web application, with a backend powered by Python and AI models trained with Random Forest and SVM.
 
-## Project Overview
-This project aims to develop an AI-driven system that provides personalized mental health treatment recommendations based on user input. Users will complete a self-assessment, and the backend will analyze the data using two datasets—mental symptoms and drug treatments—to generate tailored treatment suggestions. The final product will be a single-page web application, with a backend powered by Python and AI models trained with Random Forest and SVM.
-
 ## Project Scope
 1. **User Input & Assessment**: Users enter their information and take a self-assessment.
 2. **Data Processing**: Self-assessment data is processed by the backend.
