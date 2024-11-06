@@ -1,2 +1,3 @@
 # Ignore everything in the path/to directory
 path/to/*
+advice_model/
