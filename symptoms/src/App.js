@@ -1,5 +1,5 @@
 import './App.css';
-
+import { app, analytics } from './firebase';
 
 
 function App() {
