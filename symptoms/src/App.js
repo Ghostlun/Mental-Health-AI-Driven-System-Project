@@ -43,6 +43,13 @@ function App() {
             <h1>Diagnosis Output</h1>
           </header>
           <main className="main-body">
+            <div className="form-group">
+              <label htmlFor="symptom">
+                Enter your symptoms:
+                <br/>
+                <input name="symptom" id="symptomInput"/>
+              </label>
+            </div>
             <h2>Diagnosis Group</h2>
             <p>{diagnosisGroup}</p>
             <button onClick={handleGoBack}>Go Back</button>
@@ -145,13 +152,6 @@ function App() {
                 Mood:
                 <br/>
                 <input name="moom" id="mood"/>
-              </label>
-            </div>
-            <div className="form-group">
-              <label htmlFor="symptom">
-                Enter your symptoms:
-                <br/>
-                <input name="symptom" id="symptomInput"/>
               </label>
             </div>
             <div className="form-group">
