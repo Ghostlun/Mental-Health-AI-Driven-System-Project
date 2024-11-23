@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './App.css';
-
+import { app, analytics } from './firebase';
 
 
 function App() {
