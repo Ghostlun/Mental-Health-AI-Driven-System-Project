@@ -28,8 +28,11 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-.symptoms {
-  width: 1000px; /* You can adjust this width as needed */
+#symptomInput {
+  width: 500px;
+  height: 100px;
+  color: white;
+
 }
 
 .submit {
