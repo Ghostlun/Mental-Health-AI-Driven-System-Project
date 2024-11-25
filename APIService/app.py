@@ -4,7 +4,6 @@ import pandas as pd
 import numpy as np
 
 from flask import Flask, request, jsonify
-from transformers import GPT2LMHeadModel, GPT2Tokenizer
 
 app = Flask(__name__)
 
@@ -13,8 +12,6 @@ model_diagnosis = joblib.load('diagnosisModel/diagnosis_model.pkl')
 le_diagnosis_group = joblib.load('diagnosisModel/le_diagnosis_group.pkl')  # Example encoder loading
 le_prev_Diagnosis_group = joblib.load('diagnosisModel/le_prev_Diagnosis_group.pkl')  # Adjust paths as necessary
 le_symptoms = joblib.load('diagnosisModel/le_symptoms.pkl')
-
-
 
 @app.route('/test_api', methods=['POST'])
 def test_api():
@@ -28,23 +25,13 @@ def test_api():
 @app.route('/generate-advice', methods=['POST'])
 def generate_advice():
     try:
-        # Parse input data
         data = request.json
-        if "input_text" not in data:
-            return jsonify({"error": "Missing 'input_text' field"}), 400
-        input_text = data["input_text"]
 
-        # Tokenize and generate response
-        inputs = tokenizer.encode(input_text, return_tensors="pt", max_length=128, truncation=True)
-        outputs = model.generate(inputs, max_length=150, num_return_sequences=1, pad_token_id=tokenizer.eos_token_id)
 
-        # Decode the generated text
-        response = tokenizer.decode(outputs[0], skip_special_tokens=True)
-        return jsonify({"response": response})
-
+        return jsonify({'response': "You are okay."})
     except Exception as e:
-        return jsonify({"error": str(e)}), 500
-
+        return jsonify({'error': str(e)}), 500
+    
 
 @app.route('/predict-diagnosis', methods=['POST'])
 def predict_diagnosis():
@@ -58,7 +45,6 @@ def predict_diagnosis():
             if field not in data:
                 return jsonify({'error': f'Missing required field: {field}'}), 400
         
-        # Map inputs using your preprocessing functions
         age = data['Age']
         symptoms_encoded = le_symptoms.transform([data['Symptoms']])[0]
         re_gender = 1 if data['Gender'] == 'Male' else 2 if data['Gender'] == 'Female' else 3
