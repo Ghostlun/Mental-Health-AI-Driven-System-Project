@@ -7,3 +7,4 @@ build/
 API_KEY.py
 __pycache__/
 sklearn-env/
+.env
