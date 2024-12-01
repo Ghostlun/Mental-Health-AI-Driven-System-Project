@@ -17,41 +17,41 @@ function App() {
 
     setAdvice("It is not uncommon for car accidents to cause PTSD symptoms.  I would recommend seeing a therapist who has experience in treating trauma.  If it was a particularly bad accident you may want to find a therapist who uses EMDR (Eye Movement Desensitization Reprocessing) therapy.  You may also want to read the book ")
 
-    // const userInput = document.getElementById('userConcern').value.trim();
+    const userInput = document.getElementById('userConcern').value.trim();
 
-    // if (!userInput) {
-    //   setErrorMessage('Please enter your concern before requesting advice.');
-    //   return;
-    // }
+    if (!userInput) {
+      setErrorMessage('Please enter your concern before requesting advice.');
+      return;
+    }
 
-    // setErrorMessage('');
-    // setLoading(true);
-    // setAdvice('');
+    setErrorMessage('');
+    setLoading(true);
+    setAdvice('');
 
-    // try {
-    //   const response = await axios.post('http://127.0.0.1:5000/generate-advice', {
-    //     input: userInput,
-    //     disorder: diagnosisGroup,
-    //   });
+    try {
+      const response = await axios.post('http://127.0.0.1:5000/generate-advice', {
+        input: userInput,
+        disorder: diagnosisGroup,
+      });
 
-    //   if (response.data.error) {
-    //     setErrorMessage(response.data.error);
-    //   } else {
-    //     setAdvice(response.data.response);
+      if (response.data.error) {
+        setErrorMessage(response.data.error);
+      } else {
+        setAdvice(response.data.response);
 
-    //     // Simulating additional results based on the generated advice
-    //     const generatedResults = `Based on the advice provided, consider focusing on the following actions: 
-    //     - Reflect on your priorities.
-    //     - Develop a concrete action plan.
-    //     - Seek additional resources if needed.`;
+        // Simulating additional results based on the generated advice
+        const generatedResults = `Based on the advice provided, consider focusing on the following actions: 
+        - Reflect on your priorities.
+        - Develop a concrete action plan.
+        - Seek additional resources if needed.`;
 
-    //   }
-    // } catch (error) {
-    //   console.error('Error fetching advice:', error);
-    //   setErrorMessage('An error occurred while fetching advice. Please try again.');
-    // } finally {
-    //   setLoading(false);
-    // }
+      }
+    } catch (error) {
+      console.error('Error fetching advice:', error);
+      setErrorMessage('An error occurred while fetching advice. Please try again.');
+    } finally {
+      setLoading(false);
+    }
   };
 
   // added logic
@@ -86,25 +86,25 @@ function App() {
 
     // ToDo: Delete later
     console.log(requestData)
-    setDiagnosisGroup("Mood Disorder");
+    // setDiagnosisGroup("Mood Disorder");
     setIsSubmitted(true);
 
-    // try {
-    //   const response = await axios.post('http://127.0.0.1:5000/predict-diagnosis', requestData);
+    try {
+      const response = await axios.post('http://127.0.0.1:5000/predict-diagnosis', requestData);
       
 
-    //   if (response.data.error) {
-    //     setErrorMessage(response.data.error);
-    //   } else {
-    //     // Update state with the diagnosis group
-    //     console.log(response)
-    //     setDiagnosisGroup(response.data['Diagnosis Group']);
-    //     setIsSubmitted(true);
-    //   }
-    // } catch (error) {
-    //   setErrorMessage('An error occurred while processing your request. Please try again.');
-    //   console.error(error);
-    // }
+      if (response.data.error) {
+        setErrorMessage(response.data.error);
+      } else {
+        // Update state with the diagnosis group
+        console.log(response)
+        setDiagnosisGroup(response.data['Diagnosis Group']);
+        setIsSubmitted(true);
+      }
+    } catch (error) {
+      setErrorMessage('An error occurred while processing your request. Please try again.');
+      console.error(error);
+    }
   };
 
   const handleGoBack = () => {
