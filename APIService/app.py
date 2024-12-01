@@ -26,10 +26,9 @@ le_symptoms = joblib.load('diagnosisModel/le_symptoms.pkl')
 def test_api():
     try:
         print("API activates")
-        return []
-
+        return jsonify({"status": "success", "message": "API is active and running"}), 200
     except Exception as e:
-        return jsonify({'error': str(e)}), 500
+        return jsonify({'status': 'error', 'message': str(e)}), 500
     
 @app.route('/generate-advice', methods=['POST'])
 def generate_advice():
@@ -37,6 +36,7 @@ def generate_advice():
         data = request.json
         user_input = data.get('input', '')
         user_disorder = data.get('disorder', '')
+        disorder = 'Mood Disorders'
 
         if not user_input:
             return jsonify({"error": "Input is required"}), 400
@@ -44,7 +44,7 @@ def generate_advice():
         response = openai.chat.completions.create(
                 model="ft:gpt-4o-mini-2024-07-18:personal::AWAogewP",
                 messages=[
-                    {"role": "system", "content": f"Based on the diagnosis {user_disorder}, please provide advice."},
+                    {"role": "system", "content": f"Based on the diagnosis {disorder}, please provide advice."},
                     {"role": "user", "content": user_input}
                 ],
                 max_tokens=150,
