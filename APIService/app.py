@@ -6,8 +6,10 @@ import numpy as np
 from flask import Flask, request, jsonify
 from dotenv import load_dotenv
 import os
+from flask_cors import CORS 
 
 app = Flask(__name__)
+CORS(app)  # Allow requests from all origins
 import openai
 
 load_dotenv()
@@ -34,7 +36,7 @@ def generate_advice():
     try:
         data = request.json
         user_input = data.get('input', '')
-        disorder = 'Mood Disorders'
+        user_disorder = data.get('disorder', '')
 
         if not user_input:
             return jsonify({"error": "Input is required"}), 400
@@ -42,7 +44,7 @@ def generate_advice():
         response = openai.chat.completions.create(
                 model="ft:gpt-4o-mini-2024-07-18:personal::AWAogewP",
                 messages=[
-                    {"role": "system", "content": f"Based on the diagnosis {disorder}, please provide advice."},
+                    {"role": "system", "content": f"Based on the diagnosis {user_disorder}, please provide advice."},
                     {"role": "user", "content": user_input}
                 ],
                 max_tokens=150,
@@ -89,4 +91,4 @@ def predict_diagnosis():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(host="127.0.0.1", port=5000, debug=True)
