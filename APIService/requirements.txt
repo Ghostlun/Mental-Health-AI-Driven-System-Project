@@ -6,3 +6,4 @@ python-dotenv==1.0.0
 openai==1.55.2
 scikit-learn==1.5.1
 scipy==1.13.1
+flask-cors ==5.0.0
