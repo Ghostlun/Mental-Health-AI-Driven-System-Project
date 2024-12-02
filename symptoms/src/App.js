@@ -29,7 +29,7 @@ function App() {
     setAdvice('');
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/generate-advice', {
+      const response = await axios.post('https://pacific-hollows-13335-79599d21d756.herokuapp.com/generate-advice', {
         input: userInput,
         disorder: diagnosisGroup,
       });
@@ -87,25 +87,31 @@ function App() {
     // ToDo: Delete later
     console.log(requestData)
     // setDiagnosisGroup("Mood Disorder");
-    setIsSubmitted(true);
 
     try {
-      const response = await axios.post('http://127.0.0.1:5000/predict-diagnosis', requestData);
+      const response = await axios.post('https://pacific-hollows-13335-79599d21d756.herokuapp.com/predict-diagnosis', requestData);
       
-
+      if (!response || !response.data) {
+        setErrorMessage('Unexpected response from the server.');
+        console.error('Empty or invalid response:', response);
+        return;
+      }
+    
       if (response.data.error) {
+        console.log(response.data.error);
         setErrorMessage(response.data.error);
-      } else {
-        // Update state with the diagnosis group
-        console.log(response)
+      } else if (response.data['Diagnosis Group']) {
         setDiagnosisGroup(response.data['Diagnosis Group']);
         setIsSubmitted(true);
+      } else {
+        setErrorMessage('Diagnosis group not found in the server response.');
+        console.error('Invalid response structure:', response.data);
       }
     } catch (error) {
       setErrorMessage('An error occurred while processing your request. Please try again.');
-      console.error(error);
+      console.error('API call error:', error);
     }
-  };
+  }    
 
   const handleGoBack = () => {
     setIsSubmitted(false);
