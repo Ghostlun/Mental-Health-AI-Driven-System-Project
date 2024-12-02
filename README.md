@@ -44,6 +44,50 @@ This project aims to develop an AI-driven system that provides personalized ment
 3. **Data Collection**: Gather necessary datasets and prepare them for processing.
 4. **Run Application**: Start the server, run the frontend, and test the application.
 
+## **Setup Instructions**
+
+### **Backend Setup**
+1. Clone the repository:
+   ```bash
+   git clone <repository_url>
+   cd <repository_folder>
+   ```
+
+2. Create and activate the virtual environment:
+   ```bash
+   python -m venv myenv
+   source myenv/bin/activate  # For Linux/Mac
+   myenv\Scripts\activate     # For Windows
+   ```
+
+3. Install dependencies:
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+4. Run the Flask app:
+   ```bash
+   flask run
+   ```
+
 ---
 
-For further details, consult each sprint's tasks and the recommended tools to streamline your project management. Happy coding!
+### **Frontend Setup**
+1. Navigate to the frontend directory:
+   ```bash
+   cd frontend
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+   ```bash
+   npm start
+   ```
+
+---
+
+You are now ready to use the backend and frontend services!
