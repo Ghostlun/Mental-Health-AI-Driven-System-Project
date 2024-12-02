@@ -24,7 +24,7 @@ le_symptoms = joblib.load('diagnosisModel/le_symptoms.pkl')
 
 @app.route('/')
 def home():
-    return "Hello, Heroku!"
+    return "Hello, Testing!"
 
 
 @app.route('/test_api', methods=['POST'])
@@ -33,6 +33,7 @@ def test_api():
         print("API activates")
         return jsonify({"status": "success", "message": "API is active and running"}), 200
     except Exception as e:
+        print(str(e))
         return jsonify({'status': 'error', 'message': str(e)}), 500
     
 @app.route('/generate-advice', methods=['POST'])
