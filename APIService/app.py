@@ -22,6 +22,11 @@ le_diagnosis_group = joblib.load('diagnosisModel/le_diagnosis_group.pkl')
 le_prev_Diagnosis_group = joblib.load('diagnosisModel/le_prev_Diagnosis_group.pkl')  
 le_symptoms = joblib.load('diagnosisModel/le_symptoms.pkl')
 
+@app.route('/')
+def home():
+    return "Hello, Heroku!"
+
+
 @app.route('/test_api', methods=['POST'])
 def test_api():
     try:
@@ -91,4 +96,5 @@ def predict_diagnosis():
         return jsonify({'error': str(e)}), 500
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=5000, debug=False)
+    port = int(os.environ.get('PORT', 5000))
+    app.run(host="0.0.0.0", port=port)
