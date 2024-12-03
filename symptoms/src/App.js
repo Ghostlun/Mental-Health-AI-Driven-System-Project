@@ -276,7 +276,6 @@ function App() {
               <option value="Bipolar Disorder">Bipolar Disorder</option>
               <option value="Anxiety">Anxiety</option>
               <option value="Depression">Depression</option>
-              <option value="NaN">None</option>
             </select>
           </label>
         </div>
