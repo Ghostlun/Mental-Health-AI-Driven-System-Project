@@ -1,0 +1,215 @@
+INFO:root:Python version:
+INFO:root:3.12.4 (v3.12.4:8e8a4baf65, Jun  6 2024, 17:33:18) [Clang 13.0.0 (clang-1300.0.29.30)]
+INFO:root:Installed Python modules and versions:
+INFO:root:appnope==0.1.4
+INFO:root:asttokens==2.4.1
+INFO:root:comm==0.2.2
+INFO:root:debugpy==1.8.5
+INFO:root:decorator==5.1.1
+INFO:root:executing==2.0.1
+INFO:root:ipykernel==6.29.5
+INFO:root:ipython==8.27.0
+INFO:root:jedi==0.19.1
+INFO:root:jupyter-client==8.6.2
+INFO:root:jupyter-core==5.7.2
+INFO:root:matplotlib-inline==0.1.7
+INFO:root:nest-asyncio==1.6.0
+INFO:root:parso==0.8.4
+INFO:root:pexpect==4.9.0
+INFO:root:platformdirs==4.2.2
+INFO:root:prompt-toolkit==3.0.47
+INFO:root:psutil==6.0.0
+INFO:root:ptyprocess==0.7.0
+INFO:root:pure-eval==0.2.3
+INFO:root:pygments==2.18.0
+INFO:root:pyzmq==26.2.0
+INFO:root:stack-data==0.6.3
+INFO:root:tornado==6.4.1
+INFO:root:traitlets==5.14.3
+INFO:root:wcwidth==0.2.13
+INFO:root:Django==3.2.25
+INFO:root:MarkupSafe==3.0.2
+INFO:root:PyJWT==2.8.0
+INFO:root:PyYAML==6.0.2
+INFO:root:asgiref==3.8.1
+INFO:root:beautifulsoup4==4.12.3
+INFO:root:cachecontrol==0.14.0
+INFO:root:cachetools==5.4.0
+INFO:root:certifi==2024.7.4
+INFO:root:cffi==1.16.0
+INFO:root:charset-normalizer==3.3.2
+INFO:root:chunkit==0.2.8
+INFO:root:click==8.1.7
+INFO:root:contourpy==1.2.1
+INFO:root:cryptography==42.0.8
+INFO:root:cycler==0.12.1
+INFO:root:dj-database-url==2.2.0
+INFO:root:django-environ==0.11.2
+INFO:root:djangorestframework==3.15.1
+INFO:root:et-xmlfile==1.1.0
+INFO:root:filelock==3.16.1
+INFO:root:firebase-admin==6.5.0
+INFO:root:fonttools==4.53.1
+INFO:root:fsspec==2024.10.0
+INFO:root:gensim==4.3.3
+INFO:root:google-api-core==2.19.1
+INFO:root:google-api-python-client==2.137.0
+INFO:root:google-auth==2.32.0
+INFO:root:google-auth-httplib2==0.2.0
+INFO:root:google-cloud-core==2.4.1
+INFO:root:google-cloud-firestore==2.16.1
+INFO:root:google-cloud-storage==2.17.0
+INFO:root:google-crc32c==1.5.0
+INFO:root:google-resumable-media==2.7.1
+INFO:root:googleapis-common-protos==1.63.2
+INFO:root:grpcio==1.64.1
+INFO:root:grpcio-status==1.62.2
+INFO:root:gunicorn==22.0.0
+INFO:root:html2text==2024.2.26
+INFO:root:httplib2==0.22.0
+INFO:root:huggingface-hub==0.26.2
+INFO:root:idna==3.7
+INFO:root:jinja2==3.1.4
+INFO:root:joblib==1.4.2
+INFO:root:kiwisolver==1.4.5
+INFO:root:matplotlib==3.9.2
+INFO:root:mpmath==1.3.0
+INFO:root:msgpack==1.0.8
+INFO:root:networkx==3.4.2
+INFO:root:nltk==3.9.1
+INFO:root:numpy==1.26.4
+INFO:root:opencv-contrib-python-headless==4.9.0.80
+INFO:root:openpyxl==3.1.5
+INFO:root:packaging==24.1
+INFO:root:pandas==2.2.2
+INFO:root:pillow==10.3.0
+INFO:root:pip==24.0
+INFO:root:plotly==5.23.0
+INFO:root:proto-plus==1.24.0
+INFO:root:protobuf==4.25.3
+INFO:root:psycopg2-binary==2.9.9
+INFO:root:pyasn1==0.6.0
+INFO:root:pyasn1-modules==0.4.0
+INFO:root:pycparser==2.22
+INFO:root:pyparsing==3.1.2
+INFO:root:python-dateutil==2.9.0.post0
+INFO:root:pytz==2024.1
+INFO:root:qpsolvers==4.3.3
+INFO:root:regex==2024.9.11
+INFO:root:requests==2.32.3
+INFO:root:rsa==4.9
+INFO:root:safetensors==0.4.5
+INFO:root:scikit-learn==1.5.1
+INFO:root:scipy==1.13.1
+INFO:root:setuptools==75.3.0
+INFO:root:six==1.16.0
+INFO:root:smart-open==7.0.4
+INFO:root:soupsieve==2.6
+INFO:root:sqlparse==0.5.1
+INFO:root:sympy==1.13.1
+INFO:root:tenacity==9.0.0
+INFO:root:threadpoolctl==3.5.0
+INFO:root:tokenizers==0.20.1
+INFO:root:toml==0.10.2
+INFO:root:torch==2.5.1
+INFO:root:torchvision==0.20.1
+INFO:root:tqdm==4.66.6
+INFO:root:transformers==4.46.1
+INFO:root:typing-extensions==4.12.2
+INFO:root:tzdata==2024.1
+INFO:root:uritemplate==4.1.1
+INFO:root:urllib3==2.2.2
+INFO:root:whitenoise==6.7.0
+INFO:root:wordcloud==1.9.3
+INFO:root:wrapt==1.16.0
+INFO:root:autocommand==2.2.2
+INFO:root:backports.tarfile==1.2.0
+INFO:root:importlib-metadata==8.0.0
+INFO:root:importlib-resources==6.4.0
+INFO:root:inflect==7.3.1
+INFO:root:jaraco.collections==5.1.0
+INFO:root:jaraco.context==5.3.0
+INFO:root:jaraco.functools==4.0.1
+INFO:root:jaraco.text==3.12.1
+INFO:root:more-itertools==10.3.0
+INFO:root:tomli==2.0.1
+INFO:root:typeguard==4.3.0
+INFO:root:wheel==0.43.0
+INFO:root:zipp==3.19.2
+INFO:root:Environment variables:
+INFO:root:COMMAND_MODE: unix2003
+INFO:root:HOME: /Users/yoon
+INFO:root:HOMEBREW_CELLAR: /opt/homebrew/Cellar
+INFO:root:HOMEBREW_PREFIX: /opt/homebrew
+INFO:root:HOMEBREW_REPOSITORY: /opt/homebrew
+INFO:root:INFOPATH: /opt/homebrew/share/info:
+INFO:root:LOGNAME: yoon
+INFO:root:MallocNanoZone: 0
+INFO:root:NVM_BIN: /Users/yoon/.nvm/versions/node/v18.20.4/bin
+INFO:root:NVM_CD_FLAGS: -q
+INFO:root:NVM_DIR: /Users/yoon/.nvm
+INFO:root:NVM_INC: /Users/yoon/.nvm/versions/node/v18.20.4/include/node
+INFO:root:OLDPWD: /
+INFO:root:ORIGINAL_XDG_CURRENT_DESKTOP: undefined
+INFO:root:PATH: /usr/local/bin:/Users/yoon/Library/Python/3.12/bin:/Users/yoon/.nvm/versions/node/v18.20.4/bin:/opt/homebrew/opt/postgresql/bin:/Users/yoon/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin:/Users/yoon/.nvm/versions/node/v18.20.4/bin:/opt/homebrew/opt/postgresql/bin:/Users/yoon/.local/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Library/Frameworks/Python.framework/Versions/3.12/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/Library/Apple/usr/bin
+INFO:root:PWD: /
+INFO:root:SHELL: /bin/zsh
+INFO:root:SHLVL: 0
+INFO:root:SSH_AUTH_SOCK: /private/tmp/com.apple.launchd.XVW6PFtFoW/Listeners
+INFO:root:TMPDIR: /var/folders/hy/344rq3v160s1tb_mmkdw_fqc0000gn/T/
+INFO:root:USER: yoon
+INFO:root:VSCODE_AMD_ENTRYPOINT: vs/workbench/api/node/extensionHostProcess
+INFO:root:VSCODE_CODE_CACHE_PATH: /Users/yoon/Library/Application Support/Code/CachedData/f1e16e1e6214d7c44d078b1f0607b2388f29d729
+INFO:root:VSCODE_CRASH_REPORTER_PROCESS_TYPE: extensionHost
+INFO:root:VSCODE_CWD: /
+INFO:root:VSCODE_HANDLES_UNCAUGHT_ERRORS: true
+INFO:root:VSCODE_IPC_HOOK: /Users/yoon/Library/Application Support/Code/1.91-main.sock
+INFO:root:VSCODE_NLS_CONFIG: {"locale":"en-us","osLocale":"en-us","availableLanguages":{},"_languagePackSupport":true}
+INFO:root:VSCODE_PID: 34211
+INFO:root:XPC_FLAGS: 0x0
+INFO:root:XPC_SERVICE_NAME: application.com.microsoft.VSCode.706901.706907
+INFO:root:_: /private/var/folders/hy/344rq3v160s1tb_mmkdw_fqc0000gn/T/AppTranslocation/85603797-A8B0-4B37-8645-0C102AD6E56D/d/Visual Studio Code.app/Contents/MacOS/Electron
+INFO:root:__CFBundleIdentifier: com.microsoft.VSCode
+INFO:root:__CF_USER_TEXT_ENCODING: 0x1F5:0x0:0x0
+INFO:root:ELECTRON_RUN_AS_NODE: 1
+INFO:root:VSCEXT_STACK_ANALYSIS_COMMAND: rhda.stackAnalysis
+INFO:root:VSCEXT_TRACK_RECOMMENDATION_ACCEPTANCE_COMMAND: rhda.trackRecommendationAcceptance
+INFO:root:VSCEXT_UTM_SOURCE: vscode
+INFO:root:VSCEXT_MATCH_MANIFEST_VERSIONS: true
+INFO:root:VSCEXT_USE_PYTHON_VIRTUAL_ENVIRONMENT: false
+INFO:root:VSCEXT_USE_GO_MVS: false
+INFO:root:VSCEXT_ENABLE_PYTHON_BEST_EFFORTS_INSTALLATION: false
+INFO:root:VSCEXT_USE_PIP_DEP_TREE: false
+INFO:root:VSCEXT_VULNERABILITY_ALERT_SEVERITY: Error
+INFO:root:VSCEXT_EXHORT_MVN_PATH: mvn
+INFO:root:VSCEXT_EXHORT_GRADLE_PATH: gradle
+INFO:root:VSCEXT_EXHORT_NPM_PATH: npm
+INFO:root:VSCEXT_EXHORT_GO_PATH: go
+INFO:root:VSCEXT_EXHORT_PYTHON3_PATH: python3
+INFO:root:VSCEXT_EXHORT_PIP3_PATH: pip3
+INFO:root:VSCEXT_EXHORT_PYTHON_PATH: python
+INFO:root:VSCEXT_EXHORT_PIP_PATH: pip
+INFO:root:VSCEXT_TELEMETRY_ID: 41a22c7a-9133-432c-b58d-7574161905ff
+INFO:root:VSCEXT_EXHORT_SYFT_PATH: syft
+INFO:root:VSCEXT_EXHORT_SYFT_CONFIG_PATH: 
+INFO:root:VSCEXT_EXHORT_SKOPEO_PATH: skopeo
+INFO:root:VSCEXT_EXHORT_SKOPEO_CONFIG_PATH: 
+INFO:root:VSCEXT_EXHORT_DOCKER_PATH: docker
+INFO:root:VSCEXT_EXHORT_PODMAN_PATH: podman
+INFO:root:VSCEXT_EXHORT_IMAGE_PLATFORM: 
+INFO:root:APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL: 1
+INFO:root:PYDEVD_IPYTHON_COMPATIBLE_DEBUGGING: 1
+INFO:root:PYTHONUNBUFFERED: 1
+INFO:root:PYTHONIOENCODING: utf-8
+INFO:root:PYTHON_FROZEN_MODULES: on
+INFO:root:LC_CTYPE: UTF-8
+INFO:root:PYDEVD_USE_FRAME_EVAL: NO
+INFO:root:TERM: xterm-color
+INFO:root:CLICOLOR: 1
+INFO:root:FORCE_COLOR: 1
+INFO:root:CLICOLOR_FORCE: 1
+INFO:root:PAGER: cat
+INFO:root:GIT_PAGER: cat
+INFO:root:MPLBACKEND: module://matplotlib_inline.backend_inline
+INFO:root:KMP_DUPLICATE_LIB_OK: True
+INFO:root:KMP_INIT_AT_FORK: FALSE

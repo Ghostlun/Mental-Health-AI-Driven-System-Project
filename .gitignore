@@ -10,3 +10,4 @@ sklearn-env/
 .env
 myenv/
 diagnosisModel/
+venv
