@@ -56,7 +56,6 @@ Ultimately, the goal is to provide users with meaningful, data-driven suggestion
    - Display results through the React-based frontend UI.
 
 ## **LLaMA Dataset Usage (Future Scope)**
-
 - In future phases, LLaMA models will be explored for on-device or open-source deployment.
 - Focus will be on expanding language support and fine-tuning using broader mental health datasets.
 - Ideal for offline or private AI chatbot scenarios, especially when OpenAI API use is restricted.
