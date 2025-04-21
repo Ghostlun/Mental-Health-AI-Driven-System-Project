@@ -67,7 +67,6 @@ def main():
     })
 
     dataset = dataset.map(convert_to_features, remove_columns=["messages"])
-    # dataset["train"] = dataset["train"].shuffle(seed=42).select(range(100))
 
     print("Converted Length:", dataset["train"].column_names)
     print("Input Length:", len(dataset["train"][0]["input_ids"]))
