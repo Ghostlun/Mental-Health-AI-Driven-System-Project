@@ -1,0 +1,4 @@
+[2025-05-08 16:48:12] User: Hello, How are you doing?
+[2025-05-08 16:48:12] Chatbot (preset): Hi there! How are you doing today?
+[2025-05-08 16:48:22] User: I am fine thank you.
+[2025-05-08 16:48:22] Chatbot (GPT): [This is where GPT would generate a response]
