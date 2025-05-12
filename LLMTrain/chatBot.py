@@ -1,48 +1,34 @@
-from datetime import datetime
+def chatbot():
+    print("🙋‍♀️ Hello there!")
+    print("😊 How are you feeling today?")
+    print("1. I'm feeling happy")
+    print("2. I'm not feeling great")
 
-LOG_FILE = "chat_log.txt"
+    choice = input("👉 Please select an option (1 or 2): ")
 
-def log_message(role, message):
-    with open(LOG_FILE, "a", encoding="utf-8") as f:
-        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
-        f.write(f"[{timestamp}] {role}: {message}\n")
+    if choice == "1":
+        print("✨ That's wonderful! What made you feel happy today?")
+        good_thing = input("✏️ Your answer: ")
+        print(f"😊 That sounds lovely! '{good_thing}' must have been a really nice experience.")
+        print("Would you like to share what kind of conversation you had during that moment?")
+        convo = input("✏️ Your answer: ")
+        print(f"💬 Conversations like '{convo}' are really meaningful. Wishing you more joyful moments ahead! 🙌")
+
+    elif choice == "2":
+        print("😟 I'm sorry to hear that. Would you like to share what happened?")
+        problem = input("✏️ Your answer: ")
+        print("🤖 Sending your concern to GPT for thoughtful support...")
+        gpt_response = call_gpt(problem)
+        print(f"🧠 GPT: {gpt_response}")
+
+    else:
+        print("⚠️ Invalid input. Please choose either 1 or 2.")
 
 
-def get_preset_response(user_input):
-    user_input = user_input.lower()
-
-    if "hello" in user_input or "hi" in user_input:
-        return "Hi there! How are you doing today?"
-    elif "bad" in user_input or "not good" in user_input:
-        return "I'm sorry to hear that. Want to talk about what's bothering you?"
-    elif "good" in user_input:
-        return "That's great to hear! What's making you feel good today?"
-    elif "fight" in user_input or "argument" in user_input:
-        return "Arguments can be really tough. Do you want to share what happened?"
-    return None
-
-
-def main():
-    print("🤖 Mental Health Chatbot (testing mode)\nType 'exit' to quit.\n")
-
-    while True:
-        user_input = input("You: ")
-        log_message("User", user_input)
-
-        if user_input.lower() == "exit":
-            print("Chatbot: Take care! 👋")
-            log_message("Chatbot", "Take care! 👋")w
-            break
-
-        preset_response = get_preset_response(user_input)
-        if preset_response:
-            print(f"Chatbot (preset): {preset_response}")
-            log_message("Chatbot (preset)", preset_response)
-        else:
-            gpt_response = "[This is where GPT would generate a response]"
-            print(f"Chatbot (GPT): {gpt_response}")
-            log_message("Chatbot (GPT)", gpt_response)
-
+def call_gpt(user_input):
+    # Placeholder for GPT response — replace this with actual OpenAI API call
+    # API Call
+    return f"It’s completely understandable to feel overwhelmed when '{user_input}'. You might find it helpful to establish a small routine or take short breaks. You’ve got this!"
 
 if __name__ == "__main__":
-    main()
+    chatbot()
