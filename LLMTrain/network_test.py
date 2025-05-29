@@ -5,7 +5,7 @@ import uuid
 BASE_URL = "http://localhost:8000"
 
 # 테스트용 사용자 이메일과 메시지
-email = "blue1357a@gmail.com"
+email = "test@gmail.com"
 message = "I'm feeling really anxious today."
 
 # Style User T/F

@@ -1,10 +1,5 @@
 import requests
 
-WIT_API_TOKEN = "Bearer SNCPHOJLZKI2CNIKQUJVBJCBDJGC6RSQ"
-HEADERS = {
-    "Authorization": WIT_API_TOKEN
-}
-
 def get_prediction(user_input):
     url = f"https://api.wit.ai/message?v=20200513&q={user_input}"
     response = requests.get(url, headers=HEADERS)
