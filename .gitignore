@@ -12,3 +12,5 @@ myenv/
 diagnosisModel/
 venv
 .venv
+/TrendAnalysis/cleaned_data
+/TrendAnalysis/raw_data
